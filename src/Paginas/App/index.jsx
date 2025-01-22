@@ -1,3 +1,4 @@
+import { useRoutes, BrowserRouter } from 'react-router-dom'
 import Administrador from '../Administrador'
 import Aguinaldo from '../Aguinaldo'
 import Dias_libres from'../Dias_libres'
@@ -6,13 +7,27 @@ import NotFound from '../NotFound'
 import Pagos from '../Pagos'
 import Personal from '../Personal'
 import './App.css'
+import Navbar from '../../Componentes/Navbar'
 
-function App() {
+const AppRoutes = () => {
+  let routes = useRoutes ([
+    { path: '/', element: <Inicio /> },
+    { path: '/administrador', element: <Administrador /> },
+    { path: '/aguinaldo', element: <Aguinaldo /> },
+    { path: '/dias-libres', element: <Dias_libres /> },
+    { path: '/*', element: <NotFound /> },
+    { path: '/pagos', element: <Pagos /> },
+    { path: '/personal', element: <Personal /> }
+])
+  return routes
+}
 
+const App = () => {
   return (
-    <div className="bg-amber-200">
-      <Administrador />
-    </div>
+    <BrowserRouter>
+      <Navbar />
+      <AppRoutes/>
+    </BrowserRouter>
   )
 }
 
