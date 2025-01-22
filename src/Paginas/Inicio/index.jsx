@@ -1,9 +1,13 @@
+import Layout from '../../Componentes/Layout'
+import Boton_ventanas from '../../Componentes/Boton_ventanas';
+
 function Inicio() {
 
   return (
-    <div className="bg-amber-200">
+    <Layout>
       Inicio
-    </div>
+      <Boton_ventanas/>
+    </ Layout>
   )
 }
 

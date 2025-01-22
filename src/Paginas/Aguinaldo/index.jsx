@@ -1,9 +1,10 @@
+import Layout from '../../Componentes/Layout'
 function Aguinaldo() {
 
     return (
-      <div className="bg-amber-200">
+      <Layout>
         Aguinaldo
-      </div>
+      </ Layout>
     )
   }
   

@@ -1,9 +1,10 @@
+import Layout from '../../Componentes/Layout'
 function Dias_libres() {
 
     return (
-      <div className="bg-amber-200">
+      <Layout>
         Dias libres
-      </div>
+      </ Layout>
     )
   }
   

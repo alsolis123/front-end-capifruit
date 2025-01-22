@@ -1,9 +1,10 @@
+import Layout from '../../Componentes/Layout'
 function Pagos() {
 
     return (
-      <div className="bg-amber-200">
+      <Layout>
         Pagos
-      </div>
+      </ Layout>
     )
   }
   

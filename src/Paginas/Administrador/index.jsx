@@ -1,9 +1,10 @@
+import Layout from '../../Componentes/Layout'
 function Administrador() {
 
     return (
-      <div className="bg-amber-200">
+      <Layout>
         Administrador
-      </div>
+      </ Layout>
     )
   }
   

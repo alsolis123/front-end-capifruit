@@ -1,9 +1,10 @@
+import Layout from '../../Componentes/Layout'
 function Personal() {
 
     return (
-      <div className="bg-amber-200">
+      <Layout>
         Personal
-      </div>
+      </ Layout>
     )
   }
   
